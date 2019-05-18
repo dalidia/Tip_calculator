@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color:#3399FF;
+  margin:1.5em auto;
+  width: 27em;
+  height: 20em;
+  position: relative;
+}
+
+.Title {
+  background-color: purple;
+  text-align: center;
+  padding: .4em;
+  color:white;
+  border-radius:0.5em 0.5em 0 0;
+  margin-bottom:0;
+}
+
+section {
+	background-color: gray;
+	padding:1em;
+	font-size:1.5em;
+	border-radius:0 0 1em 1em;
+
+}
+
+.input {
+  height: 2.5em;
+  width: 10em;
+  font-size: .5em;
+  border-radius: .5em;
+  border:none;
+  margin:.3em;
+}
+
+#submit {
+  height: 1.5em;
+  width: 10em;
+  border-radius: .4em;
+  font-size:1.5em;
+  color:white;
+  background-color:#750ABC;
+  border:none;
+  text-align: center;
+}
+
+#selector {
+  height:3.5em;
+  width:13em;
+}
+
+.solution {
+  display:none;
+  text-align: center;
+}

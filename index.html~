@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <h1>Tip Calculator</h1>
+      <form>
+        <p>How much was your bill?</p>
+	<input type="text" name="bill_amount">
+	<p>How was your service?</p>
+	<select>
+	  <option disabled>Choose an option</option>
+	  <option>Good</option>
+	</select>
+      </form>
+    </main>
+  </body>
+</html>
