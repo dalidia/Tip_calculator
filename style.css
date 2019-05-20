@@ -7,7 +7,6 @@ body {
   margin:1.5em auto;
   width: 27em;
   height: 20em;
-  position: relative;
 }
 
 .Title {
@@ -24,17 +23,19 @@ section {
 	padding:1em;
 	font-size:1.5em;
 	border-radius:0 0 1em 1em;
-
 }
 
 .input {
   height: 2.5em;
-  width: 10em;
+  width: 11em;
   font-size: .5em;
   border-radius: .5em;
   border:none;
   margin:.3em;
+  padding:1em;
+  background-color:#e8eeef;
 }
+
 
 #submit {
   height: 1.5em;
@@ -42,14 +43,24 @@ section {
   border-radius: .4em;
   font-size:1.5em;
   color:white;
-  background-color:#750ABC;
+  background-color:purple;
   border:none;
   text-align: center;
 }
 
-#selector {
-  height:3.5em;
-  width:13em;
+input[type="radio"]
+{
+  margin: 0 1em 1em 0;
+}
+
+label {
+  font-size: 0.9em;
+}
+
+.label-title {
+  display: block;
+  margin-bottom: .4em;
+  margin-top:1em;
 }
 
 .solution {
