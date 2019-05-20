@@ -1,0 +1,59 @@
+<!DOCTYPE>
+<html lang="en-US">
+  <head>
+    <title>Tip calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tip calculator">
+    <meta name="keywords" content="tips, calculator, restaurants, dalidia">
+    <meta name="author" content="Lidia Ataupillco Ramos">
+    <meta name="theme-color" content="#ff0000">
+
+    <link rel="author" href="https://dalidia.github.io/">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <h1 class="Title">Tip Calculator</h1>
+      <section>
+        <div>
+          <form name="tip_calculator" onsubmit="return validateForm()" method="get">
+            <label for="bill" class="label-title">How much was your bill?</label>
+            $<input type="text" id="bill" name="bill_amount" placeholder="Bill amount" class="input">
+
+            <label class="label-title">How was your service?</label>
+            <input type="radio" id="excellent" value="0.3" name="tip_percentage"><label for="excellent">Excellent (30%)</label><br>
+            <input type="radio" id="good" value="0.2" name="tip_percentage"><label for="good">Good (20%)</label><br>
+            <input type="radio" id="okay" value='0.15' name='tip_percentage'><label for='okay'>Okay (15%)</label><br>
+            <input type='radio' id='bad' value='0.1' name='tip_percentage'><label for='bad'>Bad (10%)</label><br>
+            <input type='radio' id='terrible' value='0.05' name='tip_percentage'><label for='terrible'>Terrible (5%)</label>
+
+            <!--
+    	      <select id="selector">
+    	        <option disabled selected value="0">Choose an option</option>
+    	        <option value=".3">Excellent (30%)</option>
+              <option value=".2">Good (20%)</option>
+              <option value=".15">Okay (15%)</option>
+              <option value=".1">Bad (10%)</option>
+              <option value=".05">Terrible (5%)</option>
+            </select>
+          -->
+            
+            <label for="customers" class="label-title">How many people are sharing the bill?</label>
+            <input type="text" id="customers" name="num_cust" placeholder="Number of people" class="input"> people
+            <br><br>
+            <input type="submit" value="Submit" id="submit">
+          </form>
+        </div>
+
+        <div class="solution">
+          <p>Tip amount</p>
+          <p><sup>each $ </sup><span id="tip_result"></span></p>
+        </div>
+      </section>
+
+    </main>
+  </body>
+</html>
