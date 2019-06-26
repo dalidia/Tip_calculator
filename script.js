@@ -1,8 +1,10 @@
-function validateForm() {
+const validateForm = () => {
 	var bill_amount = document.forms["tip_calculator"]["bill_amount"].value;
 	var num_cust = document.forms["tip_calculator"]["num_cust"].value;
 	var percentage = document.forms["tip_calculator"]["tip_percentage"].value;
 
+
+	// !bill_amount
 	if (bill_amount == "" && num_cust == "") {
 		alert("Both fields are empty. Please fill out the form.");
 		return;
@@ -31,7 +33,7 @@ function validateForm() {
 	return false;
 }
 
-function CalcTip(bill, num_cust, percentage) {
+const CalcTip = (bill, num_cust, percentage) => {
 	percentage = parseFloat(percentage);
 	bill = parseFloat(bill);
 	num_cust = parseInt(num_cust);
