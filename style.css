@@ -3,9 +3,9 @@
 }
 
 body {
-	background-color:#3399FF;
+	background-color:#3399f08f;
   margin:1.5em auto;
-  width: 27em;
+  width: 90%;
   height: 20em;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 section {
-	background-color: gray;
+	background-color: #808080c7;
 	padding:1em;
 	font-size:1.5em;
 	border-radius:0 0 1em 1em;
@@ -37,12 +37,13 @@ section {
 }
 
 
-#submit {
+input[type="submit"] {
   height: 1.5em;
-  width: 10em;
+  width: 100%;
   border-radius: .4em;
   font-size:1.5em;
   color:white;
+  margin-top:.5em;
   background-color:purple;
   border:none;
   text-align: center;
